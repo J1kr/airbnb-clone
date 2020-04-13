@@ -11,6 +11,8 @@ black = "*"
 [packages]
 django = "==2.2.5"
 flake8 = "*"
+config = "*"
+config-setting = "*"
 
 [requires]
 python_version = "3.7"
