@@ -13,6 +13,7 @@ django = "==2.2.5"
 flake8 = "*"
 config = "*"
 config-setting = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
