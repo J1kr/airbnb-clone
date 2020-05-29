@@ -32,12 +32,12 @@ class User(AbstractUser):
     )
     bio = models.TextField(default="", blank=True)
     birthdate = models.DateField(null=True)
-    langauge = models.CharField(
+    language = models.CharField(
         choices=LANGUAGE_CHOICES, max_length=2, null=True, blank=True
     )
 
     currency = models.CharField(
-        choices=CURRENCY_CHOICES, max_length=2, null=True, blank=True
+        choices=CURRENCY_CHOICES, max_length=3, null=True, blank=True
     )
 
     superhost = models.BooleanField(default=False)
