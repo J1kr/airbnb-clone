@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class RommsConfig(AppConfig):
-    name = 'romms'
+class RoomsConfig(AppConfig):
+    name = "romms"
