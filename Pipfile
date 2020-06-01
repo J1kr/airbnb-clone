@@ -12,8 +12,8 @@ black = "*"
 django = "==2.2.5"
 flake8 = "*"
 config = "*"
-config-setting = "*"
 pillow = "*"
+django-countries = "*"
 
 [requires]
 python_version = "3.7"
