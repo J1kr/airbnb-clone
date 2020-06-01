@@ -41,7 +41,7 @@ DJANGO_APPS = [
 
 PROJECT_APPS = [
     "users.apps.UsersConfig",
-    "romms.apps.RoomsConfig",
+    "rooms.apps.RoomsConfig",
     "core.apps.CoreConfig",
 ]
 
