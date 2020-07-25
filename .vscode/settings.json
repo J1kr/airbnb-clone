@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Administrator\\.virtualenvs\\airbnb-clone-A6Gv_WC2\\Scripts\\python.exe",
+    "python.pythonPath": "/home/J1/.local/share/virtualenvs/airbnb-clone-RXRFPFQg/bin/python",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
