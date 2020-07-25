@@ -1,4 +1,3 @@
-ls
 """
 Django settings for config project.
 
