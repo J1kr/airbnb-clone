@@ -24,7 +24,7 @@ class RoomType(AbstractItem):
 
 class Amenity(AbstractItem):
 
-    """ Amenity Model Definition """  
+    """ Amenity Model Definition """
     class Meta:
         verbose_name_plural = "Amenities"
 
@@ -46,8 +46,10 @@ class Photo(core_models.TimeStampedModel):
 
     caption = models.CharField(max_length=80)
     file = models.ImageField()
-    room = models.ForeignKey("Room", on_delete=models.CASCADE) 
+    room = models.ForeignKey("Room", on_delete=models.CASCADE)
+
     def __str__(self):
+
         return self.caption
 
 class Room(core_models.TimeStampedModel):
