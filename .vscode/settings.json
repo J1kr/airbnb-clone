@@ -8,6 +8,6 @@
     "python.linting.pylintPath": "/home/J1/.local/share/virtualenvs/airbnb-clone-RXRFPFQg/bin/pylint",
     "python.linting.flake8Args": [
         "--max-line-length=120",
-        "--ignore=E402,F841,F401,E302,E305",
+        "--ignore=E402,F841,F401,E302,E305,W504,W503",
     ]
 }
