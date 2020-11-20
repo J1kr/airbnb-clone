@@ -1,0 +1,30 @@
+<h1>Welcome to people</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> people </title>
+  </head>
+  <body>
+    {% block content %}
+
+      {% for people in people.object_list  %}
+          <h2>{{people.title}} - {{people.year}}</h2>
+      {% endfor %}
+
+      <h5>
+      {% if people.has_previous %}
+          <a href="?page={{people.number|add:-1}}">Previous</a>
+      {% endif %}
+
+      Page {{people.number}} of {{people.paginator.num_pages}}
+      
+      {% if people.has_next  %}
+          <a href="?page={{people.number|add:1}}">Next</a>
+      {% endif %}
+      </h5>
+
+    {% endblock content %}
+  </body>
+</html>
