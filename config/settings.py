@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "wf+3$4ndj7em0a6tx%njw$_9r&-iyy1y=av2v6_+v8+^+8$1uj"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["mogki.com", "www.mogki.com"]
 
