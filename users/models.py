@@ -56,7 +56,7 @@ class User(AbstractUser):
     login_method = models.CharField(
         max_length=50, choices=LOGIN_CHOICES, default=LOGIN_EMAIL
     )
-    
+
     def get_absolute_url(self):
         return reverse("users:profile", kwargs={"pk": self.pk})
 
