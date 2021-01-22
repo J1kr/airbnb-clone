@@ -12,7 +12,8 @@ urlpatterns = [
     path("login/kakao/", views.kakao_login, name="kakao-login"),
     path("login/kakao/callback/", views.kakao_callback, name="kakao-callback"),
     path("verify/<str:key>/", views.complete_verification, name="complete-verification"),
-    path("<int:pk>/", views.UserProfileView.as_view(), name="profile"),
     path("update_profile/", views.UpdateProfileView.as_view(), name="update"),
     path("update_password/", views.UpdatePasswordView.as_view(), name="password"),
+    path("<int:pk>/", views.UserProfileView.as_view(), name="profile"),
+    path("switch_hosting/", views.switch_hosting, name="switch_hosting"),
 ]
