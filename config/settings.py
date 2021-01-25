@@ -138,11 +138,12 @@ MEDIA_URL = "/media/"
 
 # Email Setting
 
-EMAIL_HOST = "smtp.mailgun.org"
+EMAIL_HOST = "email-smtp.ap-northeast-2.amazonaws.com"
 EMAIL_PORT = "587"
-EMAIL_HOST_USER = os.environ.get("MAILGUN_USERNAME")
-EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_PASSWORD")
+EMAIL_HOST_USER = os.environ.get("SES_USERNAME")
+EMAIL_HOST_PASSWORD = os.environ.get("SES_PASSWORD")
 EMAIL_FROM = "j1@mogki.com"
+EMAIL_USE_TLS = 1
 
 # Auth
 
