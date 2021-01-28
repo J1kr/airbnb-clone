@@ -1,1 +1,1 @@
-web: uwsgi  --wsgi-file ./config/wsgi.py
+web: uwsgi  --wsgi-file /config/wsgi.py
