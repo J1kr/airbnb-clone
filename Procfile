@@ -1,0 +1,1 @@
+web: uwsgi  --wsgi-file ./config/wsgi.py
