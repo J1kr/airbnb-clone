@@ -94,7 +94,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-if DEBUG is False:
+if DEBUG:
 
     DATABASES = {
         "default": {
@@ -176,12 +176,13 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 # Sentry
 
-sentry_sdk.init(
-    dsn=os.environ.get("SENTRY_URL"),
-    integrations=[DjangoIntegration()],
-    traces_sample_rate=1.0,
+if not DEBUG:
+    sentry_sdk.init(
+        dsn=os.environ.get("SENTRY_URL"),
+        integrations=[DjangoIntegration()],
+        traces_sample_rate=1.0,
 
-    # If you wish to associate users to errors (assuming you are using
-    # django.contrib.auth) you may enable sending PII data.
-    send_default_pii=True
-)
+        # If you wish to associate users to errors (assuming you are using
+        # django.contrib.auth) you may enable sending PII data.
+        send_default_pii=True
+    )
